@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>COVID-19</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: 'Ubuntu', sans-serif;
+            text-decoration: none;
+            box-sizing: border-box;
+            list-style: none;
+        }
+
+        body {
+            height: 100%;
+		
+        }
+
+        .navbar {
+            width: 100%;
+            height: 60px;
+            background: #072c87;
+            position: fixed;
+            top: 0;
+            left: 0;
+            padding: 0 25px;
+
+        }
+
+        .navbar .inner_navbar {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            width: 100%;
+            height: 100%;
+        }
+
+        .navbar .hamburger {
+            display: none;
+        }
+
+        .navbar .logo a {
+            font-weight: 700;
+            font-size: 24px;
+            letter-spacing: 3px;
+            color: #fff;
+        }
+
+        .navbar .logo a span {
+            color: #78a5e3;
+        }
+
+        .navbar .menu ul {
+            display: flex;
+        }
+
+        .navbar .menu ul li a {
+            width: 120px;
+            margin-right: 10px;
+            display: block;
+            text-align: center;
+            padding: 10px;
+            border-radius: 25px;
+            color: #fff;
+            text-transform: uppercase;
+            font-size: 14px;
+            letter-spacing: 2px;
+            transition: all 0.2s ease;
+        }
+
+        .navbar .menu ul li:last-child a {
+            margin-right: 0;
+        }
+
+        .navbar .menu ul li a:hover,
+        .navbar .menu ul li a.active {
+            background: #c0e0f2;
+        }
+
+        .main_container {
+            margin-top: 60px;
+            padding: 25px;
+        }
+
+        .main_container .content {
+            display: flex;
+            width: 100%;
+            flex-wrap: wrap;
+        }
+
+        .main_container .content .item_wrap {
+            width: 50%;
+            padding: 10px;
+        }
+
+        .main_container .content .item_wrap .item {
+            padding: 25px;
+            background: #fff;
+            line-height: 22px;
+        }
+
+        @media (max-width: 992px) {
+            .navbar {
+                height: 100px;
+                padding: 12px;
+            }
+
+            .navbar .inner_navbar {
+                flex-direction: column;
+            }
+
+            .main_container {
+                margin-top: 100px;
+            }
+        }
+
+        @media (max-width: 728px) {
+            .navbar {
+                height: 60px;
+            }
+
+            .navbar .inner_navbar {
+                flex-direction: row;
+            }
+
+            .main_container {
+                margin-top: 60px;
+            }
+
+            .navbar .menu ul {
+                position: absolute;
+                top: 60px;
+                left: 0;
+                display: block;
+                background: #090f1b;
+                width: 100%;
+            }
+
+            .navbar .menu ul li {
+                padding: 10px;
+            }
+
+            .navbar .menu ul li a {
+                width: 100%;
+                padding: 12px;
+            }
+
+            .navbar .hamburger {
+                display: block;
+                position: absolute;
+                top: 15px;
+                right: 25px;
+                font-size: 24px;
+                color: #fff;
+                cursor: pointer;
+                transition: all 0.2s ease;
+            }
+
+            .navbar .hamburger:hover {
+                color: #5bd485;
+            }
+
+            .navbar .menu {
+                display: none;
+            }
+
+            .navbar .menu.active {
+                display: block;
+            }
+
+            .main_container .content .item_wrap {
+                width: 100%;
+            }
+        }
+
+        .covid19-text {
+            font-size: 5rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.2rem;
+            color: #072c87;
+            text-shadow: 0 0.5rem 1rem #072c87;
+            margin-top: 5%;
+        }
+
+
+
+
+
+        .services{
+    margin: 40px 0;
+}
+.service{
+    display: flex;
+    margin: 30px 0;
+}
+.service-icon{
+    flex: 30%;
+    align-self: flex-start;
+    font-size: 48px;
+    color: #252525;
+}
+.service-content{
+    padding-left: 20px;
+	
+}
+.service-content h2{
+    opacity: 0.7;
+}
+.service-content button{
+    margin-left: 0;
+    margin-right: 0;
+    background: var(--yellow);
+    color: #fff;
+}
+@media(min-width: 992px){
+    .services-container{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-column-gap: 30px;
+		
+    }
+    .title h2{
+        font-size: 10px!important;
+    }
+}
+@media(max-width: 500px){
+    .title h2{
+        font-size: 24px;
+    }
+}
+.footer{
+	background-color: #24262b;
+    padding: 0px;
+}
+.row{
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+}
+.footer-col{
+   width: 30%;
+   padding: 0 15px;
+}
+.footer-col h4{
+	font-size: 18px;
+	color: #ffffff;
+	text-transform: capitalize;
+	margin-bottom: 35px;
+	font-weight: 500;
+	position: relative;
+}
+.footer-col h4::before{
+	content: '';
+	position: absolute;
+	left:0;
+	bottom: -10px;
+	background-color: #a4c8ee;
+	height: 2px;
+	box-sizing: border-box;
+	width: 50px;
+}
+.footer-col ul li:not(:last-child){
+	margin-bottom: 10px;
+}
+.footer-col ul li a{
+	font-size: 16px;
+	text-transform: capitalize;
+	color: #ffffff;
+	text-decoration: none;
+	font-weight: 300;
+	color: #bbbbbb;
+	display: block;
+	transition: all 0.3s ease;
+}
+.footer-col ul li a:hover{
+	color: #ffffff;
+	padding-left: 8px;
+}
+.footer-col .social-links a{
+	display: inline-block;
+	height: 40px;
+	width: 40px;
+	background-color: rgba(255,255,255,0.2);
+	margin:0 10px 10px 0;
+	text-align: center;
+	line-height: 40px;
+	border-radius: 50%;
+	color: #ffffff;
+	transition: all 0.5s ease;
+}
+.footer-col .social-links a:hover{
+	color: #24262b;
+	background-color: #ffffff;
+}
+
+/*responsive*/
+@media(max-width: 767px){
+  .footer-col{
+    width: 50%;
+    margin-bottom: 30px;
+}
+}
+@media(max-width: 574px){
+  .footer-col{
+    width: 100%;
+}
+}
+    </style>
+</head>
+
+<body>
+    <div class="navbar" >
+        <div class="inner_navbar">
+            <div class="logo">
+                <a href="#">Hostel <span>Postel</span></a>
+            </div>
+            <div class="menu">
+                <ul>
+                    <li><a href="HostelPostel.html" class="active" style="text-decoration:none;">Home</a></li>
+                    <li><a href="Hotels.html" style="text-decoration:none;">Hotels</a></li>
+                    <li><a href="Things.html" style="text-decoration:none;">Things to do</a></li>
+                    <li><a href="Resto.html" style="text-decoration:none;">Restaurants</a></li>
+                    <li><a href="ContactForm.html" style="text-decoration:none;">Contact</a></li>
+                    <li><a href="AboutUS.html" style="text-decoration:none;">About</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <center>
+        <h1 class="covid19-text" id="top">
+            <i class="fas fa-user-md"></i> Covid-19
+        </h1>
+    </center>
+    <center>
+        <h1 style="color: #072c87;margin-top: 1%;">
+            <i class="fas fa-shield-alt"></i><i>Corona Protection Measures.</i>
+        </h1>
+    </center>
+
+    <section class = "services sec-width" id = "services">
+        <div class = "services-container" style="width:80%; text-align: justify;margin:auto;">
+           
+            <article class = "service">
+                <div class = "service-icon">
+                    <span>
+                        <i class = "fas fa-utensils" style="color: #072c87;"></i>
+                    </span>
+                </div>
+                <div class = "service-content">
+                    <h2 style="color: #072c87;">Meals</h2>
+                    <p><b>Suspension of open buffet services;  Restaurants offer digital à la carte service.
+                        Banning the hookah service.
+                        The necessity to leave a space of at least two meters between each table and the other, and one meter between each guest and another seated at one table.  A maximum of six seats are allowed for families.</b></p>
+                    <br><br><a href="#" target="_blank" style="text-decoration:none;"><span style="border-style: solid;border-color: blue; background-color: blue;border-radius: 5%; padding: 2%;color: white;">Know More</span></a>
+                </div>
+            </article>
+        
+            <article class = "service">
+                <div class = "service-icon">
+                    <span>    
+                        <i class="fas fa-tint" style="color: #072c87;"></i>
+                    </span>
+                </div>
+                <div class = "service-content">
+                    <h2 style="color: #072c87;">Swimming Pools</h2>
+                    <p><b>Regularly sterilize your pool with the highest levels of chlorine (5 mg / liter) and bromine (10 mg / liter) in the water.
+                        Sanitize the swimming pool, surfaces, tables and seats after each use and after closing.
+                        The necessity to leave at least two meters space between each chaise longue.
+                        Pool towels are placed in guest rooms.
+                        All group activities banned at swimming pools.</b></p>
+                    <br><br><a href="#" target="_blank" style="text-decoration:none;"><span style="border-style: solid;border-color: blue; background-color: blue;border-radius: 5%; padding: 2%;color: white;">Know More</span></a>
+                </div>
+            </article>
+        
+            <article class = "service">
+                <div class = "service-icon">
+                    <span>
+                        <i class="fas fa-building" style="color: #072c87;"></i>
+                    </span>
+                </div>
+                <div class = "service-content">
+                    <h2 style="color: #072c87;">The Rooms</h2>
+                    <p><b>Clean all rooms daily according to the instructions of the Ministry of Health.
+                        Clean and disinfect all places of public contact and public bathrooms every hour using disinfectants.
+                        Disinfection of corridors and corridors and disinfection of rooms after guests leave the hotel.
+                        Using a steam machine to sterilize and sterilize furniture and furnishings.</b></p>
+                    <br><br><a href="#" target="_blank" style="text-decoration:none;"><span style="border-style: solid;border-color: blue; background-color: blue;border-radius: 5%; padding: 2%;color: white;">Know More</span></a>
+                </div>
+            </article>
+         
+            <article class = "service">
+                <div class = "service-icon">
+                    <span>
+                        <i class="fas fa-syringe" style="color: #072c87;"></i>
+                    </span>
+                </div>
+                <div class = "service-content">
+                    <h2 style="color: #072c87;">Examination</h2>
+                    <p><b>These include prevention measures in hotels when receiving guests, which require the provision of a rapid test device, and the value of the test is charged to the guests' bill.  The hotel is committed to assigning a doctor to examine every guest, to ensure that everyone is free from any symptoms or respiratory diseases.</b></p>
+                    	<br><br><a href="#" target="_blank" style="text-decoration:none;"><span style="border-style: solid;border-color: blue; background-color: blue;border-radius: 5%; padding: 2%;color: white;">Know More</span></a>
+                </div>
+            </article>
+        </div>
+    </section>
+
+    <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"
+        integrity="sha384-SlE991lGASHoBfWbelyBPLsUlwY1GwNDJo3jSJO04KZ33K2bwfV9YBauFfnzvynJ"
+        crossorigin="anonymous"></script>
+		<footer class="footer">
+  	 <div class="section5">
+  	 	<div class="row">
+  	 		<div class="footer-col">
+  	 			<h4>Company</h4>
+  	 			<ul>
+  	 				<li><a href="AboutUS.html">About us</a></li>
+  	 				<li><a href="PrivacyPolicy.html">Privacy policy</a>
+					</li><li><a href="#top">Back to the top</a></li>
+  	 			</ul>
+  	 		</div>
+  	 		<div class="footer-col">
+  	 			<h4>Get Help</h4>
+  	 			<ul>
+  	 				<li><a href="FAQ.html">FeedBack</a></li>
+  	 				<li><a href="ContactForm.html">Contact Us</a></li>
+  	 				<li><a href="covid19.html">Covid-19 Safety Measures</a></li>
+  	 			</ul>
+  	 		</div>
+
+  	 		<div class="footer-col">
+  	 			<h4>follow us</h4>
+  	 			<div class="social-links">
+  	 				<a href="www.facebook.com"><i class="fab fa-facebook-f"></i></a>
+  	 				<a href="www.twitter.com"><i class="fab fa-twitter"></i></a>
+  	 				<a href="www.instagram.com"><i class="fab fa-instagram"></i></a>
+  	 				<a href="www.linkedin.com"><i class="fab fa-linkedin-in"></i></a>
+  	 			</div>
+  	 		</div>
+  	 	</div>
+  	 </div>
+  </footer>
+ <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js" integrity="sha384-SlE991lGASHoBfWbelyBPLsUlwY1GwNDJo3jSJO04KZ33K2bwfV9YBauFfnzvynJ" crossorigin="anonymous"></script>
+
+   
+</body>
+
+</html>

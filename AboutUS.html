@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="en-US" class="hide-scroll">
+<head> 
+    <title>About Hostel Postel </title>
+	<link rel="shortcut icon" href="./Imgs/icon.png">
+	<link rel="stylesheet" href="index.css">
+    <link href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.css" rel="stylesheet"  type='text/css'>
+  
+	<style>
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@300&display=swap');
+*{
+	margin: 0;
+	padding: 0;
+	font-family: 'Ubuntu', sans-serif;
+	text-decoration: none;
+	box-sizing: border-box;
+	list-style: none;
+}
+body{
+height:1400px;
+display:flex;
+flex-direction: column;
+}
+.navbar{
+	width: 100%;
+	height: 60px;
+	background: #072c87;
+	position: fixed;
+	top: 0;
+	left: 0;
+	padding: 0 25px;
+	
+}
+
+.navbar .inner_navbar{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	width: 100%;
+	height: 100%;
+}
+	
+.navbar .hamburger{
+	display: none;
+}
+
+.navbar .logo a{
+	font-weight: 700;
+	font-size: 24px;
+	letter-spacing: 3px;
+	color: #fff;
+}
+
+.navbar .logo a span{
+	color: #78a5e3;
+}
+
+.navbar .menu ul{
+	display: flex;
+}
+
+.navbar .menu ul li a{
+	width: 120px;
+	margin-right: 10px;
+	display: block;
+	text-align: center;
+	padding: 10px;
+	border-radius: 25px;
+	color: #fff;
+	text-transform: uppercase;
+	font-size: 14px;
+	letter-spacing: 2px;
+	transition: all 0.2s ease;
+}
+
+.navbar .menu ul li:last-child a{
+	margin-right: 0;	
+}
+
+.navbar .menu ul li a:hover,
+.navbar .menu ul li a.active{
+	background: #c0e0f2;
+}
+
+.main_container{
+	margin-top: 60px;
+	padding: 25px;
+}
+
+.main_container .content{
+	display: flex;
+	width: 100%;
+	flex-wrap: wrap;
+}
+
+.main_container .content .item_wrap{
+	width: 50%;
+	padding: 10px;
+}
+
+.main_container .content .item_wrap .item{
+	padding: 25px;
+	background: #fff;
+	line-height: 22px;
+}
+
+@media (max-width: 992px){
+	.navbar{
+		height: 100px;
+		padding: 12px;
+	}
+	.navbar .inner_navbar{
+		flex-direction: column;
+	}
+	.main_container{
+		margin-top: 100px;
+	}
+}
+
+@media (max-width: 728px){
+	.navbar{
+		height: 60px;
+	}
+	.navbar .inner_navbar{
+		flex-direction: row;
+	}
+	.main_container{
+		margin-top: 60px;
+	}
+	.navbar .menu ul{
+		position: absolute;
+		top: 60px;
+		left: 0;
+		display: block;
+		background: #090f1b;
+		width: 100%;
+	}
+	.navbar .menu ul li{
+		padding: 10px;
+	}
+	.navbar .menu ul li a{
+		width: 100%;
+		padding: 12px;
+	}
+	.navbar .hamburger{
+		display: block;
+		position: absolute;
+		top: 15px;
+		right: 25px;
+		font-size: 24px;
+		color: #fff;
+		cursor: pointer;
+		transition: all 0.2s ease;
+	}
+	.navbar .hamburger:hover{
+		color: #5bd485;
+	}
+	.navbar .menu{
+		display: none;
+	}
+	.navbar .menu.active{
+		display: block;
+	}
+	.main_container .content .item_wrap{
+		width: 100%;
+	}
+}
+body{
+ display:flex;
+
+}
+.container{
+width: 100px;
+  height: 100px;
+  position: relative;
+
+}
+.layer1 {
+  width: 10vw;
+  height: 380px;
+  position: relative;
+  top: 30%;
+  background-color: rgba(255,0,0,0.4);
+  margin-top: 40px;
+  margin-left: 185px;  
+}
+
+.layer2{
+  width: 100px;
+  height: 150px;
+  background-color: rgba(255,0,0,0.5);
+  margin-left: 140px;
+  top: -100px;
+  background-color: rgba(0,255,255,0.5); 
+  z-index: 2;
+  position: relative;
+  left: 655px;
+  top: -350px;
+}
+.vl {
+  border-left: 6px solid blue;
+  height: 180px;
+  top: 260px;
+  left: 890px;
+  position: absolute; 
+  z-index: 2;
+}
+.v2{
+  border-left: 6px solid blue;
+  height: 200px;
+  top: 354px;
+  left: 740px;
+  position: absolute; 
+  z-index: 2;
+  transform: rotate(90deg);
+}
+.groupImg{
+  z-index: 2;
+  width: 680px;
+  height:350px;
+  position:absolute;
+  top:90px;
+  left: 200px;
+}
+.textFont{
+font-size: 32px;
+font-weight: 1;
+color:#b5b3d7;
+margin-bottom: 50px;
+margin-left: 20px;
+}
+.textFont2{
+font-size: 32px;
+font-weight: 1;
+color:#b5b3d7;
+margin-bottom: 50px;
+margin-right: 20px;
+}
+.para{
+font-size: 18px;
+margin-left: 20px;
+}
+.para2{
+font-size: 18px;
+margin-right: 20px;
+}
+.section2{
+width: 27%;
+line-through: 2px;
+position: relative;
+right: -62%;
+}
+#footer{
+  background-color: #24262b;
+  padding: 0px;
+  position: relative; 
+  bottom: -40px; 
+  right: 0;
+  left:0;
+  width: 100%;
+  height:16%;
+
+}
+.footer-col{
+   width: 30%;
+   padding: 0 15px;
+}
+.footer-col h4{
+	font-size: 18px;
+	color: #ffffff;
+	text-transform: capitalize;
+	margin-bottom: 35px;
+	font-weight: 500;
+	position: relative;
+}
+.footer-col h4::before{
+	content: '';
+	position: absolute;
+	left:0;
+	bottom: -10px;
+	background-color: #a4c8ee;
+	height: 2px;
+	box-sizing: border-box;
+	width: 50px;
+}
+.footer-col ul li:not(:last-child){
+	margin-bottom: 10px;
+}
+.footer-col ul li a{
+	font-size: 16px;
+	text-transform: capitalize;
+	color: #ffffff;
+	text-decoration: none;
+	font-weight: 300;
+	color: #bbbbbb;
+	display: block;
+	transition: all 0.3s ease;
+}
+.footer-col ul li a:hover{
+	color: #ffffff;
+	padding-left: 8px;
+}
+.footer-col .social-links a{
+	display: inline-block;
+	height: 40px;
+	width: 40px;
+	background-color: rgba(255,255,255,0.2);
+	margin:0 10px 10px 0;
+	text-align: center;
+	line-height: 40px;
+	border-radius: 50%;
+	color: #ffffff;
+	transition: all 0.5s ease;
+}
+.footer-col .social-links a:hover{
+	color: #24262b;
+	background-color: #ffffff;
+}
+@media(max-width: 767px){
+  .footer-col{
+    width: 50%;
+    margin-bottom: 30px;
+}
+}
+@media(max-width: 574px){
+  .footer-col{
+    width: 100%;
+}
+}
+	</style>
+</head>
+<body>
+
+
+	<div class="navbar">
+		<div class="inner_navbar">
+			<div class="logo">
+				<a href="#">Hostel <span>Postel</span></a>
+			</div>
+			<div class="menu">
+				<ul>
+					<li><a href="HostelPostel.html"  style="text-decoration:none;">Home</a></li>
+					<li><a href="Hotels.html" style="text-decoration:none;">Hotels</a></li>
+					<li><a href="Resto.html" style="text-decoration:none;">Restaurants</a></li>
+					<li><a href="ContactForm.html" style="text-decoration:none;">Contact</a></li>
+					<li><a href="AboutUS.html" style="text-decoration:none;" class="active">About</a></li>
+				</ul>
+			</div>
+		</div>
+		<div class="hamburger">
+			<i class="fas fa-bars"></i>
+		</div>
+	</div>
+  
+  <script>var hamburger = document.querySelector(".hamburger");
+	var menu = document.querySelector(".menu");
+
+	hamburger.addEventListener("click", function(){
+		menu.classList.toggle("active");
+	})
+	</script>
+
+<center>
+	<h2 style="margin-top:7%;color:#89d6f3; margin-bottom:2%; font-weight:1; font-size: 40px">About Hostel Postel </h2>
+    <article style="margin-bottom:2%;font-family:Rajdhani;color:black;font-size: 24px;"> Hostel Postel is an online booking site that allows customers to book a lovely vacation on the go no matter what the budget is 
+	</article>
+</center>
+	<!--<div class="container">
+	<div class="layer1">
+	About Us
+	</div>
+	<div class="layer2">
+	Our story
+	</div>
+	<div class="vl"></div>
+	<div class="v2"></div>
+</div>-->
+	<table style="width: 80%; height:80%; margin-left: auto; margin-right: auto;">
+	<tr>
+		<td><img src="./Imgs/groupImg.jpg"></td>
+		<td>
+			<h1 class="textFont">Our Story began</h1>
+				<article class="para" style=" text-align: justify;">
+				We've been inspired by our love for travel and web programming to create a website that will allow people to go on their dream vacations and have a great time without worrying about accomodations and activities to do, and not to forget the delicious food that our partners offer!
+				</article>
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<h3 class="textFont2">Our partners</h3>
+				<article class="para2" style=" text-align: justify;">
+				We started small with only 2 partners and now we have expanded our reach to several countries with numerous partners under our belt. 
+				</article>
+			</td>
+		<td><img src="./Imgs/shake.png" alt="Shaking hands"/></td>
+	</tr>
+	<tr>
+		<td><img src="" alt=""/></td>
+		<td>
+			<h3 class="textFont">Meet the Team</h3>
+				<article class="para" style=" text-align: justify;">
+				We only started with our Co-founders Mira and Amjad and now we employ a small team of 15 people of developers, marketing agents, managers and HR employees, with this small knit family of ours we were able to create a website that we're proud to show you!
+				</article>
+		</td>
+	</tr>
+</table>
+
+<footer id="footer">
+  	 <div class="section5">
+  	 	<div class="row">
+  	 		<div class="footer-col">
+  	 			<h4 style="margin-top:24px">Company</h4>
+  	 			<ul>
+  	 				<li><a href="AboutUS.html">About us</a></li>
+  	 				<li><a href="PrivacyPolicy.html">Privacy policy</a></li>
+					<li><a href="#top">Back to the top</a></li>
+  	 			</ul>
+  	 		</div>
+  	 		<div class="footer-col">
+  	 			<h4 style="margin-top:24px">Get Help</h4>
+  	 			<ul>
+  	 				<li><a href="FAQ.html">FeedBack</a></li>
+  	 				<li><a href="ContactForm.html">Contact Us</a></li>
+  	 				<li><a href="covid19.html">Covid-19 Safety Measures</a></li>
+  	 			</ul>
+  	 		</div>
+
+  	 		<div class="footer-col">
+  	 			<h4 style="margin-top:24px">follow us</h4>
+  	 			<div class="social-links">
+  	 				<a href="www.facebook.com"><i class="fab fa-facebook-f"></i></a>
+  	 				<a href="www.twitter.com"><i class="fab fa-twitter"></i></a>
+  	 				<a href="www.instagram.com"><i class="fab fa-instagram"></i></a>
+  	 				<a href="www.linkedin.com"><i class="fab fa-linkedin-in"></i></a>
+  	 			</div>
+  	 		</div>
+  	 	</div>
+  	 </div>
+  </footer>
+
+  <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js" integrity="sha384-SlE991lGASHoBfWbelyBPLsUlwY1GwNDJo3jSJO04KZ33K2bwfV9YBauFfnzvynJ" crossorigin="anonymous"></script>
+</body>	

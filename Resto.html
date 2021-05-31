@@ -1,0 +1,540 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="shortcut icon" href="./Imgs/icon.png">
+    <title>Hostel Postel Restaurants</title>
+    <link rel="stylesheet" href="restoStyle.css" />
+    <script
+      src="https://kit.fontawesome.com/64d58efce2.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+  <div class="wrapper" id="top">
+	<div class="navbar">
+		<div class="inner_navbar">
+			<div class="logo">
+				<a href="#">Hostel <span>Postel</span></a>
+			</div>
+			<div class="menu">
+				<ul>
+					<li><a href="HostelPostel.html" style="text-decoration:none;">Home</a></li>
+					<li><a href="Hotels.html" style="text-decoration:none;">Hotels</a></li>
+					<li><a href="Resto.html" style="text-decoration:none;" class="active" >Restaurants</a></li>
+					<li><a href="ContactForm.html" style="text-decoration:none;">Contact</a></li>
+					<li><a href="AboutUS.html" style="text-decoration:none;">About</a></li>
+				</ul>
+			</div>
+		</div>
+		<div class="hamburger">
+			<i class="fas fa-bars"></i>
+		</div>
+	</div>
+  
+  <script>var hamburger = document.querySelector(".hamburger");
+	var menu = document.querySelector(".menu");
+
+	hamburger.addEventListener("click", function(){
+		menu.classList.toggle("active");
+	})
+	</script>
+  
+	  <center>
+        <h1
+            style="margin-top: 8%;;background-color: #78a5e3;color: white;padding: 2%;margin-top:2.5%; width: 20%;border-radius: 25px;">
+            <i>Restaurants</i></h1>
+     </center>
+	 
+	 <section>
+	    
+		<input type="text" id="searchBar" placeholder="Search for your selected region">
+		<button>
+   	 </section>
+	   
+	   <table style="margin: 5% 20%;border-spacing: 0 20px;">
+        <tr>
+            <td>
+                <img src="./Imgs/AlIwan.jpg">
+            </td>
+            <td style="padding-left: 3%;">
+                <p> <a href="https://goo.gl/maps/mcaCCCtSxwiFQ1pt8" target="_blank"><i class="fas fa-map-marker-alt"
+                                style="color: blue;"></i></a>
+                        Al Iwan </p><br>
+                <p id="burj"> <i class="fas fa-map-pin" style="color: blue;"></i>  First Floor, Burj Al Arab, Jumeirah Rd. - Dubai - United Arab Emirates 
+                </p>
+                <br>
+                <p>
+                <ul>
+                    <i class="fas fa-utensils" style="color: blue;"></i>  Arabic food 
+                    <li><b style="color: black;">. Family friendly </li>
+                    <li><b style="color: black;">. Casual dining </li>
+                </ul>
+                </p><br>
+                <p> <i class="fas fa-globe" style="color: blue;"></i><a href="https://jumeirah.com"
+                            target="_blank" style="color: black;"> jumeirah.com</a> </p>
+                <br>
+                <p> <i class="fas fa-dollar-sign" style="color: blue;"></i> 35$ Per Person </p>
+            </td>
+        </tr>
+		
+		<tr>
+            <td>
+                <img src="./Imgs/Skyview.jpg">
+            </td>
+            <td style="padding-left: 3%;">
+                <p> <a href="https://goo.gl/maps/mcaCCCtSxwiFQ1pt8" target="_blank"><i class="fas fa-map-marker-alt"
+                                style="color: blue;"></i></a>
+                        Skyview </p><br>
+                <p> <i class="fas fa-map-pin" style="color: blue;"></i> Glitzy cocktail bar with glass walls for sea/city views at the tip of the iconic sail-shaped hotel. 
+                </p>
+                <br>
+                <p>
+                <ul>
+                    <i class="fas fa-utensils" style="color: blue;"></i>  Western food 
+                    <li><b style="color: black;">. 18+ </li>
+                    <li><b style="color: black;">. Casual dining </li>
+                </ul>
+                </p><br>
+                <p> <i class="fas fa-globe" style="color: blue;"></i><a href="https://jumeirah.com"
+                            target="_blank" style="color: black;"> www.skyview.com</a> </p>
+                <br>
+                <p> <i class="fas fa-dollar-sign" style="color: blue;"></i> 15$ Per Person </p>
+            </td>
+        </tr>
+		
+		<tr>
+            <td>
+                <img src="./Imgs/Puerto99.jpg">
+            </td>
+            <td style="padding-left: 3%;">
+                <p> <a href="https://goo.gl/maps/mcaCCCtSxwiFQ1pt8" target="_blank"><i class="fas fa-map-marker-alt"
+                                style="color: blue;"></i></a>
+                        Puerto 99 </p><br>
+                <p> <i class="fas fa-map-pin" style="color: blue;"></i> A charming mexican place that caters to newcomers and people desiring some kick in their day 
+                </p>
+                <br>
+                <p>
+                <ul>
+                    <i class="fas fa-utensils" style="color: blue;"></i>  Mexican food 
+                    <li><b style="color: black;">. Family friendly </li>
+                    <li><b style="color: black;">. Casual dining </li>
+                </ul>
+                </p><br>
+                <p><i class="fas fa-globe" style="color: blue;"></i><a href="https://jumeirah.com"
+                            target="_blank" style="color: black;"> www.puerto99.com</a></p>
+                <br>
+                <p><i class="fas fa-dollar-sign" style="color: blue;"></i> 20$ Per Person</p>
+            </td>
+        </tr>
+		
+		<!--11111111111111111111111 -->
+		
+		<tr>
+            <td>
+                <img src="./Imgs/OliveBeach.jpg">
+            </td>
+            <td style="padding-left: 3%;">
+                <p> <a href="https://goo.gl/maps/mcaCCCtSxwiFQ1pt8" target="_blank"><i class="fas fa-map-marker-alt"
+                                style="color: blue;"></i></a>
+                        Olive Beach Resto </p><br>
+                <p id="burj"> <i class="fas fa-map-pin" style="color: blue;"></i>  Muscat, Oman 
+                </p>
+                <br>
+                <p>
+                <ul>
+                    <i class="fas fa-utensils" style="color: blue;"></i>  Oriental food 
+                    <li><b style="color: black;">. Family friendly </li>
+                    <li><b style="color: black;">. Casual dining </li>
+                </ul>
+                </p><br>
+                <p> <i class="fas fa-globe" style="color: blue;"></i><a href="https://jumeirah.com"
+                            target="_blank" style="color: black;"> OliveBeach.com</a> </p>
+                <br>
+                <p> <i class="fas fa-dollar-sign" style="color: blue;"></i> 35$ Per Person </p>
+            </td>
+        </tr>
+		
+		<tr>
+            <td>
+                <img src="./Imgs/TheLongPoolCabana.jpg">
+            </td>
+            <td style="padding-left: 3%;">
+                <p> <a href="https://goo.gl/maps/mcaCCCtSxwiFQ1pt8" target="_blank"><i class="fas fa-map-marker-alt"
+                                style="color: blue;"></i></a>
+                        Long Pool Cabana </p><br>
+                <p id="burj"> <i class="fas fa-map-pin" style="color: blue;"></i>  133 18th November St, Muscat, Oman
+                </p>
+                <br>
+                <p>
+                <ul>
+                    <i class="fas fa-utensils" style="color: blue;"></i>  Puerto Rican Food 
+                    <li><b style="color: black;">. Family friendly </li>
+                    <li><b style="color: black;">. Casual dining </li>
+                </ul>
+                </p><br>
+                <p> <i class="fas fa-globe" style="color: blue;"></i><a href="https://jumeirah.com"
+                            target="_blank" style="color: black;"> longpoolcaban.com</a> </p>
+                <br>
+                <p> <i class="fas fa-dollar-sign" style="color: blue;"></i> 20$ Per Person </p>
+            </td>
+        </tr>
+		
+		<tr>
+            <td>
+                <img src="./Imgs/beach.png">
+            </td>
+            <td style="padding-left: 3%;">
+                <p> <a href="https://goo.gl/maps/mcaCCCtSxwiFQ1pt8" target="_blank"><i class="fas fa-map-marker-alt"
+                                style="color: blue;"></i></a>
+                        The Beach Restaurant </p><br>
+                <p id="burj"> <i class="fas fa-map-pin" style="color: blue;"></i>  The Chedi Hotel, North Ghubra 232, Way 3215, Street 46 Oman، 133 18th November St, Muscat, Oman 
+                </p>
+                <br>
+                <p>
+                <ul>
+                    <i class="fas fa-utensils" style="color: blue;"></i>  Arabic food 
+                    <li><b style="color: black;">. Family friendly </li>
+                    <li><b style="color: black;">. Fine dining </li>
+                </ul>
+                </p><br>
+                <p> <i class="fas fa-globe" style="color: blue;"></i><a href="https://jumeirah.com"
+                            target="_blank" style="color: black;"> beachresto.com</a> </p>
+                <br>
+                <p> <i class="fas fa-dollar-sign" style="color: blue;"></i> 50$ Per Person </p>
+            </td>
+        </tr>
+		<!-- 2222222222222222-->
+		<tr>
+            <td>
+                <img src="./Imgs/bay.png">
+            </td>
+            <td style="padding-left: 3%;">
+                <p> <a href="https://goo.gl/maps/mcaCCCtSxwiFQ1pt8" target="_blank"><i class="fas fa-map-marker-alt"
+                                style="color: blue;"></i></a>
+                        The Bay </p><br>
+                <p id="burj"> <i class="fas fa-map-pin" style="color: blue;"></i>  Jumeirah Beach Road - Jumeirah 1 - Dubai - United Arab Emirates 
+                </p>
+                <br>
+                <p>
+                <ul>
+                    <i class="fas fa-utensils" style="color: blue;"></i>  Arabic food 
+                    <li><b style="color: black;">. Family friendly </li>
+                    <li><b style="color: black;">. Casual dining </li>
+                </ul>
+                </p><br>
+                <p> <i class="fas fa-globe" style="color: blue;"></i><a href="sevenrooms.com"
+                            target="_blank" style="color: black;"> bayresto.com</a> </p>
+                <br>
+                <p> <i class="fas fa-dollar-sign" style="color: blue;"></i> 40$ Per Person </p>
+            </td>
+        </tr>
+		<tr>
+            <td>
+                <img src="./Imgs/netsu.png">
+            </td>
+            <td style="padding-left: 3%;">
+                <p> <a href="https://goo.gl/maps/mcaCCCtSxwiFQ1pt8" target="_blank"><i class="fas fa-map-marker-alt"
+                                style="color: blue;"></i></a>
+                        Netsu </p><br>
+                <p id="burj"> <i class="fas fa-map-pin" style="color: blue;"></i>  First Floor, Burj Al Arab, Jumeirah Rd. - Dubai - United Arab Emirates 
+                </p>
+                <br>
+                <p>
+                <ul>
+                    <i class="fas fa-utensils" style="color: blue;"></i>  Japanease food 
+                    <li><b style="color: black;">. Family friendly </li>
+                    <li><b style="color: black;">. Casual dining </li>
+                </ul>
+                </p><br>
+                <p> <i class="fas fa-globe" style="color: blue;"></i><a href="sevenrooms.com"
+                            target="_blank" style="color: black;"> netsu.com</a> </p>
+                <br>
+                <p> <i class="fas fa-dollar-sign" style="color: blue;"></i> 60$ Per Person </p>
+            </td>
+        </tr>
+		<tr>
+            <td>
+                <img src="./Imgs/tasca.png">
+            </td>
+            <td style="padding-left: 3%;">
+                <p> <a href="https://goo.gl/maps/mcaCCCtSxwiFQ1pt8" target="_blank"><i class="fas fa-map-marker-alt"
+                                style="color: blue;"></i></a>
+                        Tasca </p><br>
+                <p id="burj"> <i class="fas fa-map-pin" style="color: blue;"></i>  Jumeirah Beach Road - JumeirahJumeirah 1 - Dubai - United Arab Emirates 
+                </p>
+                <br>
+                <p>
+                <ul>
+                    <i class="fas fa-utensils" style="color: blue;"></i>  Bar food 
+                    <li><b style="color: black;">. Family friendly </li>
+                    <li><b style="color: black;">. Casual dining </li>
+                </ul>
+                </p><br>
+                <p> <i class="fas fa-globe" style="color: blue;"></i><a href="sevenrooms.com"
+                            target="_blank" style="color: black;"> tasca.com</a> </p>
+                <br>
+                <p> <i class="fas fa-dollar-sign" style="color: blue;"></i> 10$ Per Person </p>
+            </td>
+        </tr>
+		<!-- 33333333333333333333333333333-->
+		<tr>
+            <td>
+                <img src="./Imgs/mandarian.png">
+            </td>
+            <td style="padding-left: 3%;">
+                <p> <a href="https://goo.gl/maps/mcaCCCtSxwiFQ1pt8" target="_blank"><i class="fas fa-map-marker-alt"
+                                style="color: blue;"></i></a>
+                        Mandarin Lounge and Baraha Lounge </p><br>
+                <p id="burj"> <i class="fas fa-map-pin" style="color: blue;"></i>  Barahat Msheireb Street, Msheireb Downtown Doha Mandarin Oriental Doha
+                </p>
+                <br>
+                <p>
+                <ul>
+                    <i class="fas fa-utensils" style="color: blue;"></i>  International food 
+                    <li><b style="color: black;">. Family friendly </li>
+                    <li><b style="color: black;">. Casual dining </li>
+                </ul>
+                </p><br>
+                <p> <i class="fas fa-globe" style="color: blue;"></i><a href="https://jumeirah.com"
+                            target="_blank" style="color: black;"> mandarianlounge.com</a> </p>
+                <br>
+                <p> <i class="fas fa-dollar-sign" style="color: blue;"></i> 35$ Per Person </p>
+            </td>
+        </tr>
+		<tr>
+            <td>
+                <img src="./Imgs/oceanbasket.png">
+            </td>
+            <td style="padding-left: 3%;">
+                <p> <a href="https://goo.gl/maps/mcaCCCtSxwiFQ1pt8" target="_blank"><i class="fas fa-map-marker-alt"
+                                style="color: blue;"></i></a>
+                        Ocean Basket Villaggio </p><br>
+                <p id="burj"> <i class="fas fa-map-pin" style="color: blue;"></i>  Barahat Msheireb Street Msheireb Downtown Doha
+                </p>
+                <br>
+                <p>
+                <ul>
+                    <i class="fas fa-utensils" style="color: blue;"></i>  Italian food 
+                    <li><b style="color: black;">. Family friendly </li>
+                    <li><b style="color: black;">. Casual dining </li>
+                </ul>
+                </p><br>
+                <p> <i class="fas fa-globe" style="color: blue;"></i><a href="https://oceanbasketvillaggio.com"
+                            target="_blank" style="color: black;">  oceanbasketvillaggio.com</a> </p>
+                <br>
+                <p> <i class="fas fa-dollar-sign" style="color: blue;"></i> 24$ Per Person </p>
+            </td>
+        </tr>
+		<tr>
+            <td>
+                <img src="./Imgs/yasmine.png">
+            </td>
+            <td style="padding-left: 3%;">
+                <p> <a href="https://goo.gl/maps/mcaCCCtSxwiFQ1pt8" target="_blank"><i class="fas fa-map-marker-alt"
+                                style="color: blue;"></i></a>
+                        Yasmine Palace </p><br>
+                <p id="burj"> <i class="fas fa-map-pin" style="color: blue;"></i>  The Pearl Porta 18, Fountain Roundabout, Porto Arabia, Pearl Qatar
+                </p>
+                <br>
+                <p>
+                <ul>
+                    <i class="fas fa-utensils" style="color: blue;"></i>  Internationnal food 
+                    <li><b style="color: black;">. Family friendly </li>
+                    <li><b style="color: black;">. Fine dining </li>
+                </ul>
+                </p><br>
+                <p> <i class="fas fa-globe" style="color: blue;"></i><a href="https://jumeirah.com"
+                            target="_blank" style="color: black;"> yasminepalace.com</a> </p>
+                <br>
+                <p> <i class="fas fa-dollar-sign" style="color: blue;"></i> 70$ Per Person </p>
+            </td>
+        </tr>
+		<!--44444444444444-->
+		<tr>
+            <td>
+                <img src="./Imgs/spiga.png">
+            </td>
+            <td style="padding-left: 3%;">
+                <p> <a href="https://goo.gl/maps/mcaCCCtSxwiFQ1pt8" target="_blank"><i class="fas fa-map-marker-alt"
+                                style="color: blue;"></i></a>
+                        La Spiga </p><br>
+                <p id="burj"> <i class="fas fa-map-pin" style="color: blue;"></i>  Lobby, W Hotel Doha, Dafna, Doha 19573 
+                </p>
+                <br>
+                <p>
+                <ul>
+                    <i class="fas fa-utensils" style="color: blue;"></i>  Italian food 
+                    <li><b style="color: black;">. Family friendly </li>
+                    <li><b style="color: black;">. Fine dining </li>
+                </ul>
+                </p><br>
+                <p> <i class="fas fa-globe" style="color: blue;"></i><a href="https://laspiga.com"
+                            target="_blank" style="color: black;"> laspiga.com</a> </p>
+                <br>
+                <p> <i class="fas fa-dollar-sign" style="color: blue;"></i> 100$ Per Person </p>
+            </td>
+        </tr>
+		<tr>
+            <td>
+                <img src="./Imgs/wahm.png">
+            </td>
+            <td style="padding-left: 3%;">
+                <p> <a href="https://goo.gl/maps/mcaCCCtSxwiFQ1pt8" target="_blank"><i class="fas fa-map-marker-alt"
+                                style="color: blue;"></i></a>
+                        Wahm </p><br>
+                <p id="burj"> <i class="fas fa-map-pin" style="color: blue;"></i>  2nd Floor, W Doha Hotel, Dafna, Doha
+                </p>
+                <br>
+                <p>
+                <ul>
+                    <i class="fas fa-utensils" style="color: blue;"></i>  Finger food 
+                    <li><b style="color: black;">. Family friendly </li>
+                    <li><b style="color: black;">. Casual dining </li>
+                </ul>
+                </p><br>
+                <p> <i class="fas fa-globe" style="color: blue;"></i><a href="https://wahm.com"
+                            target="_blank" style="color: black;"> wahm.com</a> </p>
+                <br>
+                <p> <i class="fas fa-dollar-sign" style="color: blue;"></i> 15$ Per Person </p>
+            </td>
+        </tr>
+		<tr>
+            <td>
+                <img src="./Imgs/coya.png">
+            </td>
+            <td style="padding-left: 3%;">
+                <p> <a href="https://goo.gl/maps/mcaCCCtSxwiFQ1pt8" target="_blank"><i class="fas fa-map-marker-alt"
+                                style="color: blue;"></i></a>
+                        Coya </p><br>
+                <p id="burj"> <i class="fas fa-map-pin" style="color: blue;"></i>  W Doha Hotel & Residences, Diplomatic Street, Dafna
+                </p>
+                <br>
+                <p>
+                <ul>
+                    <i class="fas fa-utensils" style="color: blue;"></i>  Latin food 
+                    <li><b style="color: black;">. Family friendly </li>
+                    <li><b style="color: black;">. Fine dining </li>
+                </ul>
+                </p><br>
+                <p> <i class="fas fa-globe" style="color: blue;"></i><a href="https://coya.com"
+                            target="_blank" style="color: black;"> coya.com</a> </p>
+                <br>
+                <p> <i class="fas fa-dollar-sign" style="color: blue;"></i> 65$ Per Person </p>
+            </td>
+        </tr>
+		<!--555555555555555555555-->
+		<tr>
+            <td>
+                <img src="./Imgs/soussi.jpg" >
+            </td>
+            <td style="padding-left: 3%;">
+                <p> <a href="https://goo.gl/maps/mcaCCCtSxwiFQ1pt8" target="_blank"><i class="fas fa-map-marker-alt"
+                                style="color: blue;"></i></a>
+                        Sousi Restaurant </p><br>
+                <p id="burj"> <i class="fas fa-map-pin" style="color: blue;"></i>  Beirut
+                </p>
+                <br>
+                <p>
+                <ul>
+                    <i class="fas fa-utensils" style="color: blue;"></i>  Arabic food 
+                    <li><b style="color: black;">. Family friendly </li>
+                    <li><b style="color: black;">. Casual dining </li>
+                </ul>
+                </p><br>
+                <p> <i class="fas fa-globe" style="color: blue;"></i><a href="https://sousireso.com"
+                            target="_blank" style="color: black;"> sousirest.com</a> </p>
+                <br>
+                <p> <i class="fas fa-dollar-sign" style="color: blue;"></i> 7$ Per Person </p>
+            </td>
+        </tr>
+		<tr>
+            <td>
+                <img src="./Imgs/rossi.jpg" >
+            </td>
+            <td style="padding-left: 3%;">
+                <p> <a href="https://goo.gl/maps/mcaCCCtSxwiFQ1pt8" target="_blank"><i class="fas fa-map-marker-alt"
+                                style="color: blue;"></i></a>
+                        Rossini Osteria e Caffè </p><br>
+                <p id="burj"> <i class="fas fa-map-pin" style="color: blue;"></i> Phoenicia Hotel, Beirut 
+                </p>
+                <br>
+                <p>
+                <ul>
+                    <i class="fas fa-utensils" style="color: blue;"></i>  Middle Eastern food 
+                    <li><b style="color: black;">. Family friendly </li>
+                    <li><b style="color: black;">. Casual dining </li>
+                </ul>
+                </p><br>
+                <p> <i class="fas fa-globe" style="color: blue;"></i><a href="https://rossini.com"
+                            target="_blank" style="color: black;"> rossini.com</a> </p>
+                <br>
+                <p> <i class="fas fa-dollar-sign" style="color: blue;"></i> 30$ Per Person </p>
+            </td>
+        </tr>
+		<tr>
+            <td>
+                <img src="./Imgs/medi.jpg" >
+            </td>
+            <td style="padding-left: 3%;">
+                <p> <a href="https://goo.gl/maps/mcaCCCtSxwiFQ1pt8" target="_blank"><i class="fas fa-map-marker-alt"
+                                style="color: blue;"></i></a>
+                        Méditerranée </p><br>
+                <p id="burj"> <i class="fas fa-map-pin" style="color: blue;"></i>   General De Gaulle, Beirut
+                </p>
+                <br>
+                <p>
+                <ul>
+                    <i class="fas fa-utensils" style="color: blue;"></i>  Oriental food 
+                    <li><b style="color: black;">. Family friendly </li>
+                    <li><b style="color: black;">. Fine dining </li>
+                </ul>
+                </p><br>
+                <p> <i class="fas fa-globe" style="color: blue;"></i><a href="https://www.movenpick.com/en/middle-east/lebanon/beirut/hotel-beirut/restaurants/restaurants/mediterranee-restaurant/?utm_source=google&utm_medium=local&utm_campaign=glocal+mediterrane-rest"
+                            target="_blank" style="color: black;"> mediterranee.com</a> </p>
+                <br>
+                <p> <i class="fas fa-dollar-sign" style="color: blue;"></i> 80$ Per Person </p>
+            </td>
+        </tr>
+    </table>
+
+    
+		  <script>
+			
+		  </script>
+		  
+		  <footer class="footer">
+  	 <div class="section5">
+  	 	<div class="row">
+  	 		<div class="footer-col">
+  	 			<h4>Company</h4>
+  	 			<ul>
+  	 				<li><a href="AboutUS.html">About us</a></li>
+  	 				<li><a href="PrivacyPolicy.html">Privacy policy</a>
+					</li><li><a href="#top">Back to the top</a></li>
+  	 			</ul>
+  	 		</div>
+  	 		<div class="footer-col">
+  	 			<h4>Get Help</h4>
+  	 			<ul>
+  	 				<li><a href="FAQ.html">FeedBack</a></li>
+  	 				<li><a href="ContactForm.html">Contact Us</a></li>
+  	 				<li><a href="covid19.html">Covid-19 Safety Measures</a></li>
+  	 			</ul>
+  	 		</div>
+
+  	 		<div class="footer-col">
+  	 			<h4>follow us</h4>
+  	 			<div class="social-links">
+  	 				<a href="www.facebook.com"><i class="fab fa-facebook-f"></i></a>
+  	 				<a href="www.twitter.com"><i class="fab fa-twitter"></i></a>
+  	 				<a href="www.instagram.com"><i class="fab fa-instagram"></i></a>
+  	 				<a href="www.linkedin.com"><i class="fab fa-linkedin-in"></i></a>
+  	 			</div>
+  	 		</div>
+  	 	</div>
+  	 </div>
+  </footer>
+ <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js" integrity="sha384-SlE991lGASHoBfWbelyBPLsUlwY1GwNDJo3jSJO04KZ33K2bwfV9YBauFfnzvynJ" crossorigin="anonymous"></script>
+
+  </body>
+  </html>

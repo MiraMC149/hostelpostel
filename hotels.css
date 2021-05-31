@@ -1,0 +1,12 @@
+.booking{
+	display:flex;
+	flex-direction: column;
+	background-color: pink;
+	width: 40%;
+	height: 25%;
+	align-content: center;
+	justify-content: center;
+}
+.input-group{
+	
+}

@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css">
+    <link rel="shortcut icon" href="./Imgs/icon.png">
+    <title>Hotels</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: 'Ubuntu', sans-serif;
+            text-decoration: none;
+            box-sizing: border-box;
+            list-style: none;
+        }
+
+        body {
+            height: 1400px;
+        }
+
+        .navbar {
+            width: 100%;
+            height: 60px;
+            background: #072c87;
+            position: fixed;
+            top: 0;
+            left: 0;
+            padding: 0 25px;
+
+        }
+
+        .navbar .inner_navbar {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            width: 100%;
+            height: 100%;
+        }
+
+        .navbar .hamburger {
+            display: none;
+        }
+
+        .navbar .logo a {
+            font-weight: 700;
+            font-size: 24px;
+            letter-spacing: 3px;
+            color: #fff;
+        }
+
+        .navbar .logo a span {
+            color: #78a5e3;
+        }
+
+        .navbar .menu ul {
+            display: flex;
+        }
+
+        .navbar .menu ul li a {
+            width: 120px;
+            margin-right: 10px;
+            display: block;
+            text-align: center;
+            padding: 10px;
+            border-radius: 25px;
+            color: #fff;
+            text-transform: uppercase;
+            font-size: 14px;
+            letter-spacing: 2px;
+            transition: all 0.2s ease;
+        }
+
+        .navbar .menu ul li:last-child a {
+            margin-right: 0;
+        }
+
+        .navbar .menu ul li a:hover,
+        .navbar .menu ul li a.active {
+            background: #c0e0f2;
+        }
+
+        .main_container {
+            margin-top: 60px;
+            padding: 25px;
+        }
+
+        .main_container .content {
+            display: flex;
+            width: 100%;
+            flex-wrap: wrap;
+        }
+
+        .main_container .content .item_wrap {
+            width: 50%;
+            padding: 10px;
+        }
+
+        .main_container .content .item_wrap .item {
+            padding: 25px;
+            background: #fff;
+            line-height: 22px;
+        }
+
+        @media (max-width: 992px) {
+            .navbar {
+                height: 100px;
+                padding: 12px;
+            }
+
+            .navbar .inner_navbar {
+                flex-direction: column;
+            }
+
+            .main_container {
+                margin-top: 100px;
+            }
+        }
+
+        @media (max-width: 728px) {
+            .navbar {
+                height: 60px;
+            }
+
+            .navbar .inner_navbar {
+                flex-direction: row;
+            }
+
+            .main_container {
+                margin-top: 60px;
+            }
+
+            .navbar .menu ul {
+                position: absolute;
+                top: 60px;
+                left: 0;
+                display: block;
+                background: #090f1b;
+                width: 100%;
+            }
+
+            .navbar .menu ul li {
+                padding: 10px;
+            }
+
+            .navbar .menu ul li a {
+                width: 100%;
+                padding: 12px;
+            }
+
+            .navbar .hamburger {
+                display: block;
+                position: absolute;
+                top: 15px;
+                right: 25px;
+                font-size: 24px;
+                color: #fff;
+                cursor: pointer;
+                transition: all 0.2s ease;
+            }
+
+            .navbar .hamburger:hover {
+                color: #5bd485;
+            }
+
+            .navbar .menu {
+                display: none;
+            }
+
+            .navbar .menu.active {
+                display: block;
+            }
+
+            .main_container .content .item_wrap {
+                width: 100%;
+            }
+        }
+		.footer{
+	background-color: #24262b;
+    padding: 0px;
+}
+.row{
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+}
+.footer-col{
+   width: 30%;
+   padding: 0 15px;
+}
+.footer-col h4{
+	font-size: 18px;
+	color: #ffffff;
+	text-transform: capitalize;
+	margin-bottom: 35px;
+	font-weight: 500;
+	position: relative;
+}
+.footer-col h4::before{
+	content: '';
+	position: absolute;
+	left:0;
+	bottom: -10px;
+	background-color: #a4c8ee;
+	height: 2px;
+	box-sizing: border-box;
+	width: 50px;
+}
+.footer-col ul li:not(:last-child){
+	margin-bottom: 10px;
+}
+.footer-col ul li a{
+	font-size: 16px;
+	text-transform: capitalize;
+	color: #ffffff;
+	text-decoration: none;
+	font-weight: 300;
+	color: #bbbbbb;
+	display: block;
+	transition: all 0.3s ease;
+}
+.footer-col ul li a:hover{
+	color: #ffffff;
+	padding-left: 8px;
+}
+.footer-col .social-links a{
+	display: inline-block;
+	height: 40px;
+	width: 40px;
+	background-color: rgba(255,255,255,0.2);
+	margin:0 10px 10px 0;
+	text-align: center;
+	line-height: 40px;
+	border-radius: 50%;
+	color: #ffffff;
+	transition: all 0.5s ease;
+}
+.footer-col .social-links a:hover{
+	color: #24262b;
+	background-color: #ffffff;
+}
+
+/*responsive*/
+@media(max-width: 767px){
+  .footer-col{
+    width: 50%;
+    margin-bottom: 30px;
+}
+}
+@media(max-width: 574px){
+  .footer-col{
+    width: 100%;
+}
+}
+    </style>
+</head>
+
+<body>
+    <div class="navbar" >
+        <div class="inner_navbar">
+            <div class="logo">
+                <a href="#">Hostel <span>Postel</span></a>
+            </div>
+            <div class="menu">
+                <ul>
+                    <li><a href="HostelPostel.html"  style="text-decoration:none;">Home</a></li>
+                    <li><a href="Hotels.html" style="text-decoration:none;" class="active">Hotels</a></li>
+                    <li><a href="Resto.html" style="text-decoration:none;">Restaurants</a></li>
+                    <li><a href="ContactForm.html" style="text-decoration:none;">Contact</a></li>
+                    <li><a href="AboutUS.html" style="text-decoration:none;">About</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <center>
+        <h1 id="top"
+            style="margin-top: 8%;;background-color: #78a5e3;color: white;padding: 2%;margin-top:2.5%; width: 20%;border-radius: 25px;">
+            <i>Hotels Details</i></h1>
+    </center>
+
+    <table style="margin: 5% 20%;">
+        <tr>
+            <td>
+                <img src="Imgs/burjarabhd.jpg">
+            </td>
+            <td style="padding-left: 3%;">
+                <p><b><a href="https://goo.gl/maps/mcaCCCtSxwiFQ1pt8" target="_blank"><i class="fas fa-map-marker-alt"
+                                style="color: blue;"></i></a>
+                        Burj Al Arab</b></p><br>
+                <p><b><i class="fas fa-map-pin" style="color: blue;"></i> The Burj Al Arab Hotel is located on an
+                        artificial man-made island, with a height of 321 meters and is classified as a 7-star hotel.</b>
+                </p>
+                <br>
+                <p>
+                <ul>
+                    <i class="fas fa-plane" style="color: blue;"></i><b>Tours</b>
+                    <li><b style="color: black;">. Art Galleries</b></li>
+                    <li><b style="color: black;">. Public Parks</b></li>
+                    <li><b style="color: black;">. Desert Safari</b></li>
+                </ul>
+                </p><br>
+                <p><b><i class="fas fa-globe" style="color: blue;"></i><a href="https://www.guestreservations.com/"
+                            target="_blank" style="color: black;"> www.guestreservations.com</a></b></p>
+                <br>
+                <p><b><i class="fas fa-dollar-sign" style="color: blue;"></i> 100.00 Per Day</b></p>
+            </td>
+        </tr>
+    </table>
+
+    <table style="margin: 5% 20%;">
+        <tr>
+            <td>
+                <img src="Imgs/The Chedi Muscat hdd.jpg">
+            </td>
+            <td colspan="4" style="padding-left: 3%;">
+                <p><b><a href="https://g.page/TheChediMuscat?share" target="_blank"><i class="fas fa-map-marker-alt"
+                                style="color: blue;"></i></a>
+                        The Chedi Muscat – a GHM hotel</b></p><br>
+                <p><b><i class="fas fa-map-pin" style="color: blue;"></i> The hotel offers 6 diverse international
+                        restaurants, tickets to sightseeing and performances, as well as a large number of activities,
+                        including live musical performances, horse riding and bicycles.</b></p>
+                <br>
+                <p>
+                <ul>
+                    <i class="fas fa-h-square" style="color: blue;"></i><b> Basic Amenities</b>
+                    <li><b style="color: black;">. 158 guestrooms</b></li>
+                    <li><b style="color: black;">. Daily housekeeping service</b></li>
+                    <li><b style="color: black;">. On a private beach</b></li>
+                    <li><b style="color: black;">. golf course</b></li>
+                    <li><b style="color: black;">. 6 restaurants and 3 poolside bars</b></li>
+                </ul>
+                </p><br><br>
+                <p><b><i class="fas fa-globe" style="color: blue;"></i><a href="https://www.hotels.com/" target="_blank"
+                            style="color: black;"> www.The Chedi Muscat – a GHM hotel.com</a>
+                        <br><br>
+                        <p><b><i class="fas fa-dollar-sign" style="color: blue;"></i> 85.00 Per Day</b></p>
+            </td>
+        </tr>
+    </table>
+
+    <table style="margin: 5% 20%;">
+        <tr>
+            <td>
+                <img src="./Imgs/Mandarin Oriental Jumeira, Dubai hd.jpg">
+            </td>
+            <td style="padding-left: 3%;">
+                <p><b><a href="https://goo.gl/maps/aSqUkkxoh8JiUR3H6" target="_blank"><i class="fas fa-map-marker-alt"
+                                style="color: blue;"></i></a>
+                        Mandarin Oriental Jumeira, Dubai</b></p><br>
+                <p><b><i class="fas fa-map-pin" style="color: blue;"></i> Mandarin Oriental Jumeirah, Dubai, with its
+                        charming views of both the clear waters of the Arabian Gulf and the sparkling Dubai skyline,
+                        Dubai is a truly stunning destination with a beach that many will envy.</i></b></p>
+                <br>
+                <p><b> <i class="fas fa-h-square" style="color: blue;"></i> Some services at the hotel</b></p>
+                <ul>
+                    <li><b style="color: black;">. 5-star hotel</b></li>
+                    <li><b style="color: black;">. elevator</b></li>
+                    <li><b style="color: black;">. Shops</b></li>
+                    <li><b style="color: black;">. beauty salon</b></li>
+                </ul>
+                <br>
+                <p><b><i class="fas fa-globe" style="color: blue;"></i><a href="https://www.guestreservations.com/"
+                            target="_blank" style="color: black;"> www.Mandarin Oriental Jumeira, Dubai.com</a>
+                        <br><br>
+                        <p><b><i class="fas fa-dollar-sign" style="color: blue;"></i> 75.00 Per Day</b></p>
+            </td>
+        </tr>
+    </table>
+
+    <table style="margin: 5% 20%;">
+        <tr>
+            <td>
+                <img src="Imgs/mandarin doha hd.jpg">
+            </td>
+            <td style="padding-left: 3%;">
+                <p><b><a href="https://g.page/mandarin-oriental-doha?share" target="_blank"><i
+                                class="fas fa-map-marker-alt" style="color: blue;"></i></a>
+                        Mandarin Oriental,Doha</b></p>
+                <br>
+                <p><b><i class="fas fa-map-pin" style="color: blue;"></i> The Mandarin Oriental Hotel, Doha is located
+                        in the center of the "Msheireb Downtown Doha" project, the cultural and vibrant center of social
+                        life in the city.</b></p>
+                <br>
+                <p><b> <i class="fas fa-home" style="color: blue;"></i> Places close to Musherib Hotel Doha</b></p>
+                <ul>
+                    <li><b style="color: black;">. Emiri Diwan</b></li>
+                    <li><b style="color: black;">. Al Khoot Fort</b></li>
+                    <li><b style="color: black;">. Falcon Market</b></li>
+                    <li><b style="color: black;">. The Amiri Diwan - The Royal Palace</b></li>
+                </ul>
+                <br>
+                <p><b><i class="fas fa-globe" style="color: blue;"></i><a href="https://www.mandarinoriental.com/"
+                            target="_blank" style="color: black;"> www.Mandarin Oriental,Doha.com</a>
+                            <br><br>
+                            <p><b><i class="fas fa-dollar-sign" style="color: blue;"></i> 95.00 Per Day</b></p>
+                        </td>
+        </tr>
+    </table>
+
+    <table style="margin: 5% 20%;">
+        <tr>
+            <td>
+                <img src="Imgs/W Doha hd.jpg">
+            </td>
+            <td style="padding-left: 3%;">
+                <p><b><a href="https://goo.gl/maps/mcaCCCtSxwiFQ1pt8" target="_blank"><i class="fas fa-map-marker-alt"
+                                style="color: blue;"></i></a>
+                        W Doha</b></p>
+                        <br>
+                        <p><b><i class="fas fa-map-pin" style="color: blue;"></i> Just 200 meters from the Corniche promenade and City Center shopping mall, this boutique hotel offers elegant rooms with satellite TV. It features an outdoor pool, spa center and on-site restaurants</b></p>        
+                        <br>
+                        <p><b><i class="fas fa-ambulance" style="color: blue;"></i> Covid 19 - Health Security</b></p>
+                        <ul>
+                            <li><b style="color: black;">.  Disinfection with viricide</b></li>
+                            <li><b style="color: black;">.  Check your body temperature</b></li>
+                            <li><b style="color: black;">.  Daily cleansing of textiles</b></li>
+                        </ul>
+                        <br>
+                <p><b><i class="fas fa-globe" style="color: blue;"></i><a href="https://www.marriott.com/"
+                            target="_blank" style="color: black;"> www.W Doha.com</a>
+                            <br><br>
+                            <p><b><i class="fas fa-dollar-sign" style="color: blue;"></i> 95.00 Per Day</b></p>
+                        </td>
+        </tr>
+    </table>
+
+    <table style="margin: 5% 20%;">
+        <tr>
+            <td>
+                <img src="Imgs/kempinski hd.jpg">
+            </td>
+            <td style="padding-left: 3%;">
+                <p><b><a href="https://g.page/KempinskiMuscat?share" target="_blank"><i class="fas fa-map-marker-alt"
+                                style="color: blue;"></i></a>
+                        Kempinski Hotel Muscat </b></p>
+                        <br>
+                        <p><b><i class="fas fa-map-pin" style="color: blue;"></i> The rooms at the hotel feature room service and concierge services, to make you enjoy your visit.  The property also features a swimming pool and breakfast.  Guests arriving by car have access to free parking</b></p>
+                        <br>
+                        <p><b><i class="fas fa-shield-alt" style="color: blue;"></i> Safety and protection</b></p>    
+                        <ul>
+                            <li><b style="color: black;">.  Lockbox</b></li>
+                            <li><b style="color: black;">.   24/7 security</b></li>
+                            <li><b style="color: black;">.   alarm</b></li>
+                        </ul>
+                        <br>
+                        <p><b><i class="fas fa-globe" style="color: blue;"></i><a href="https://www.kempinski.com/"
+                            target="_blank" style="color: black;"> www.Kempinski Hotel Muscat.com</a>
+                            <br><br>
+                            <p><b><i class="fas fa-dollar-sign" style="color: blue;"></i> 80.00 Per Day</b></p>
+                    </td>
+        </tr>
+    </table>
+
+<footer class="footer">
+  	 	<div class="row">
+  	 		<div class="footer-col">
+  	 			<h4>Company</h4>
+  	 			<ul>
+  	 				<li><a href="AboutUS.html">About us</a></li>
+  	 				<li><a href="PrivacyPolicy.html">Privacy policy</a></li>
+  	 				<li><a href="#top">Back to the top</a></li>
+  	 			</ul>
+  	 		</div>
+  	 		<div class="footer-col">
+  	 			<h4>Get Help</h4>
+  	 			<ul>
+  	 				<li><a href="FAQ.html">FeedBack</a></li>
+  	 				<li><a href="ContactForm.html">Contact Us</a></li>
+  	 				<li><a href="covid19.html">Covid-19 Safety Measures</a></li>
+  	 			</ul>
+  	 		</div>
+
+  	 		<div class="footer-col">
+  	 			<h4>follow us</h4>
+  	 			<div class="social-links">
+  	 				<a href="www.facebook.com"><i class="fab fa-facebook-f"></i></a>
+  	 				<a href="www.twitter.com"><i class="fab fa-twitter"></i></a>
+  	 				<a href="www.instagram.com"><i class="fab fa-instagram"></i></a>
+  	 				<a href="www.linkedin.com"><i class="fab fa-linkedin-in"></i></a>
+  	 			</div>
+  	 		</div>
+  	 	</div>
+  </footer>
+
+    <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"
+        integrity="sha384-SlE991lGASHoBfWbelyBPLsUlwY1GwNDJo3jSJO04KZ33K2bwfV9YBauFfnzvynJ"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="shortcut icon" href="./Imgs/icon.png">
+    <title>Contact Form</title>
+    <link rel="stylesheet" href="contact.css" />
+    <script
+      src="https://kit.fontawesome.com/64d58efce2.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+  
+  <div class="wrapper" id="top">
+	<div class="navbar">
+		<div class="inner_navbar">
+			<div class="logo">
+				<a href="#">Hostel <span>Postel</span></a>
+			</div>
+			<div class="menu">
+				<ul>
+					<li><a href="HostelPostel.html" style="text-decoration:none;">Home</a></li>
+					<li><a href="Hotels.html" style="text-decoration:none;">Hotels</a></li>
+					<li><a href="Resto.html" style="text-decoration:none;">Restaurants</a></li>
+					<li><a href="ContactForm.html" style="text-decoration:none;" class="active">Contact</a></li>
+					<li><a href="AboutUS.html" style="text-decoration:none;">About</a></li>
+				</ul>
+			</div>
+		</div>
+		<div class="hamburger">
+			<i class="fas fa-bars"></i>
+		</div>
+	</div>
+  
+  <script>var hamburger = document.querySelector(".hamburger");
+	var menu = document.querySelector(".menu");
+
+	hamburger.addEventListener("click", function(){
+		menu.classList.toggle("active");
+	})
+	</script>
+  
+    <div class="container">
+      <span class="big-circle"></span>
+      <img src="img/shape.png" class="square" alt="" />
+      <div class="form">
+        <div class="contact-info">
+          <h3 class="title">Let's get in touch</h3>
+          <p class="text">
+            If you have any suggestions to us, or just need to chat hit us up! We'd love to hear from you.
+          </p>
+
+          <div class="info">
+            <div class="information">
+              <img src="img/location.png" class="icon" alt="" />
+              <p>Mina, Tr 1300</p>
+            </div>
+            <div class="information">
+              <img src="img/email.png" class="icon" alt="" />
+              <p>HostelPostel_Contact@gmail.com</p>
+            </div>
+            <div class="information">
+              <img src="img/phone.png" class="icon" alt="" />
+              <a href="tel:+961 71119085" style="text-decoration:none; color:#555555;">+961 71 11-90-85</a>
+            </div>
+          </div>
+
+          <div class="social-media">
+            <p>Connect with us :</p>
+            <div class="social-icons">
+              <a href="#">
+                <i class="fab fa-facebook-f"></i>
+              </a>
+              <a href="#">
+                <i class="fab fa-twitter"></i>
+              </a>
+              <a href="#">
+                <i class="fab fa-instagram"></i>
+              </a>
+              <a href="#">
+                <i class="fab fa-linkedin-in"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="contact-form">
+          <span class="circle one"></span>
+          <span class="circle two"></span>
+
+          <form action="index.html" autocomplete="off">
+            <h3 class="title">Contact us</h3>
+            <div class="input-container">
+              <input type="text" name="name" class="input" />
+              <label for="">Username</label>
+              <span>Username</span>
+            </div>
+            <div class="input-container">
+              <input type="email" name="email" class="input" />
+              <label for="">Email</label>
+              <span>Email</span>
+            </div>
+            <div class="input-container">
+              <input type="tel" name="phone" class="input" />
+              <label for="">Phone</label>
+              <span>Phone</span>
+            </div>
+            <div class="input-container textarea">
+              <textarea name="message" class="input"></textarea>
+              <label for="">Message</label>
+              <span>Message</span>
+            </div>
+            <input type="submit" value="Send" class="btn" />
+          </form>
+        </div>
+      </div>
+    </div>
+	
+	<div style="background-color: #fafafa;">
+	<iframe class="40View" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13250.601626354875!2d35.4969011!3d33.8728994!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xf1ec1faedb96137f!2sBeirut%20Arab%20University!5e0!3m2!1sen!2slb!4v1622057998676!5m2!1sen!2slb" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+	<img src="./Imgs/collab.jpeg" class="viewIMG"/>
+	</div>
+	
+<footer class="footer">
+  	 	<div class="row">
+  	 		<div class="footer-col">
+  	 			<h4>Company</h4>
+  	 			<ul>
+  	 				<li><a href="AboutUS.html">About us</a></li>
+  	 				<li><a href="PrivacyPolicy.html">Privacy policy</a></li>
+  	 				<li><a href="#top">Back to the top</a></li>
+  	 			</ul>
+  	 		</div>
+  	 		<div class="footer-col">
+  	 			<h4>Get Help</h4>
+  	 			<ul>
+  	 				<li><a href="FAQ.html">FAQ</a></li>
+  	 				<li><a href="ContactForm.html">Contact Us</a></li>
+  	 				<li><a href="covid19.html">Covid-19 Safety Measures</a></li>
+  	 			</ul>
+  	 		</div>
+
+  	 		<div class="footer-col">
+  	 			<h4>follow us</h4>
+  	 			<div class="social-links">
+  	 				<a href="www.facebook.com"><i class="fab fa-facebook-f"></i></a>
+  	 				<a href="www.twitter.com"><i class="fab fa-twitter"></i></a>
+  	 				<a href="www.instagram.com"><i class="fab fa-instagram"></i></a>
+  	 				<a href="www.linkedin.com"><i class="fab fa-linkedin-in"></i></a>
+  	 			</div>
+  	 		</div>
+  	 	</div>
+  </footer>
+    <script >
+	const inputs = document.querySelectorAll(".input");
+
+
+function focusFunc() {
+  let parent = this.parentNode;
+  parent.classList.add("focus");
+}
+
+function blurFunc() {
+  let parent = this.parentNode;
+  if (this.value == "") {
+    parent.classList.remove("focus");
+  }
+}
+
+inputs.forEach((input) => {
+  input.addEventListener("focus", focusFunc);
+  input.addEventListener("blur", blurFunc);
+});
+	</script>
+	<script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js" integrity="sha384-SlE991lGASHoBfWbelyBPLsUlwY1GwNDJo3jSJO04KZ33K2bwfV9YBauFfnzvynJ" crossorigin="anonymous"></script>
+  </body>
+</html>
