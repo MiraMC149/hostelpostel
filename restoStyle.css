@@ -160,7 +160,7 @@ img{
 	background-color: #24262b;
     padding: 0px;
 }
-.row{
+#row{
 	display: flex;
 	flex-wrap: wrap;
 	flex-direction: row;

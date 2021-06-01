@@ -52,12 +52,14 @@ body{
   top: 20px;
   left: 12%;
   color: white;
+  font-size:22px;
 }
 .center-left{
   position: absolute;
   top: 30%;
   left: 12%;
   color:white;
+  font-size:19px;
 }
 .section1{
 	display: block;
@@ -67,17 +69,18 @@ body{
 	text-align: center;
 	align-content: center;
 	overflow: hidden;
-	height:980px;
+	padding: 30px;
 }
 .head1{
 	margin: 2% 0% 2% 0%;
 	color:#478ac9;
+	font-size: 45px;
 }
 .head2{
 	margin-top: -2em;
 	margin-bottom: 30px;
 	color:#517397;
-	font-size: 16px;
+	font-size: 18px;
 }
 .MainButton{
 	position: relative;	
@@ -163,7 +166,7 @@ body{
 }
 .overlay{
 	position: absolute;
-    top: 318%;
+    top: 334%;
     right: 10%;
 	color: white;
 	font-size: 20px;
@@ -191,6 +194,7 @@ body{
 }
 .title{
 	font-size:28px;
+
 }
 .sub{
 	font-size:24px;
@@ -198,19 +202,19 @@ body{
 }
 .text-wrap1{
   position:absolute;
-  top:382%;	
+  top:401.7%;	
   left: 21%;
   width: 150px;
 }
 .text-wrap2{
   position:absolute;
-  top:382%;	
+  top:401.7%;
   left: 44%;
   width: 150px;
 }
 .text-wrap3{
   position:absolute;
-  top:382%;	
+  top:401.7%;
   left: 67%;
   width: 150px;
 }
