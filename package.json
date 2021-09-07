@@ -1,0 +1,8 @@
+{
+  "name": "hostelpostel",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/MiraMC149/hostelpostel.git",
+  "author": "MiraChami <Miramc149@gmail.com>",
+  "license": "MIT"
+}
